@@ -1,0 +1,36 @@
+import React from "react";
+import { Container, Stack, Text } from "@chakra-ui/react";
+import NavBar from "./components/NavBar";
+import UserBoxes from "./components/UserBoxes";
+function App() {
+  return (
+    /* Stack means all elements in it wil be layed out vertically/on top of each other, 100vh will take up the entire screen */
+    /* Container means its gonna be in the middle of the screen, my is the margin at the bottom and top of the page.  */
+    <Stack minH={"100vh"}>
+      <NavBar />
+
+      <Container maxW={"1200px"} my={4}>
+        <Text
+          fontSize={{ base: "3xl", md: "50" }}
+          fontWeight={"bold"}
+          letterSpacing={"2px"}
+          textTransform={"uppercase"}
+          textAlign={"center"}
+          mb={8}
+        >
+          <Text
+            as={"span"}
+            bgGradient={"linear(to-r, cyan.400, blue.500)"}
+            bgClip={"text"}
+          >
+            Contacts
+          </Text>
+        </Text>
+
+        <UserBoxes />
+      </Container>
+    </Stack>
+  );
+}
+
+export default App;

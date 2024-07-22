@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6", // Specify ECMAScript target version
+    "module": "commonjs", // Specify module code generation
+    "checkJs": true, // Enable type checking in JavaScript files
+    "jsx": "react", // Support for JSX, use "react" for React projects
+    "baseUrl": "./", // Base directory to resolve non-relative module names
+    "paths": {
+      "@components/*": ["src/components/*"], // Alias example, useful for imports
+      "@utils/*": ["src/utils/*"] // Another alias for utilities
+    }
+  },
+  "include": ["src"], // Include the 'src' directory for the project
+  "exclude": ["node_modules", "dist"] // Exclude directories
+}
