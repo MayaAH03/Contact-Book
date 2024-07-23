@@ -15,7 +15,7 @@ import { IoMoon } from "react-icons/io5";
 import { LuSun } from "react-icons/lu";
 import CreateUserModal from "./CreateUserModal";
 
-const NavBar = () => {
+const NavBar = ({ setUsers }) => {
   {
     /*this just allows us to switch from light to dark mode */
   }
@@ -44,7 +44,7 @@ const NavBar = () => {
             <Button onClick={toggleColorMode}>
               {colorMode === "light" ? <IoMoon /> : <LuSun size={20} />}
             </Button>
-            <CreateUserModal />
+            <CreateUserModal setUsers={setUsers} />
           </Flex>
         </Flex>
       </Box>

@@ -20,7 +20,8 @@ def create_friend():
         #Checking for required fields (form validation)
         required_fields=["name", "role", "description", "gender"]
         for field in required_fields:
-            if field not in data:
+            #this checks if the field is in the data and if it is not empty, so you cannot create empty friends.
+            if field not in data or not data.get(field):
                 return jsonify({"error": f'Missing required field: {field}'}), 400 #status code is 400
             
         name = data.get("name")
@@ -47,7 +48,7 @@ def create_friend():
         #this add command is similar to staging in git^
         db.session.commit()
 
-        return jsonify({"msg":"Friend created successfully"}), 201
+        return jsonify(new_friend.to_json()), 201
     
     except Exception as e:
         db.session.rollback()
