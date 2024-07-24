@@ -3,7 +3,7 @@ import { Container, Stack, Text } from "@chakra-ui/react";
 import NavBar from "./components/NavBar";
 import UserBoxes from "./components/UserBoxes";
 
-export const BASE_URL = "http://127.0.0.1:5000/api";
+export const BASE_URL = process.env.REACT_APP_BASE_URL || "/api";
 
 function App() {
   const [users, setUsers] = useState([]);
