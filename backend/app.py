@@ -4,7 +4,9 @@ from flask_cors import CORS
 import os
 
 app = Flask(__name__)
-CORS(app)
+
+#This can be commented out because for production we are running the frontend and backend in the same server.
+#CORS(app)
 
 #this line just configures the data base my setting the reference point for it. the "sqlite//" link refers to the name of the database we set up
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///friends.db"
