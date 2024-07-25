@@ -1,4 +1,6 @@
-<img src="https://i.imgur.com/muctOEy.png">
+<div align="center">
+  <img  width="auto" height="600"  src="https://i.imgur.com/muctOEy.png">
+</div>
 
 
 # Contact Book
