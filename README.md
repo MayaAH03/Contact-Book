@@ -14,7 +14,7 @@ This full-stack application is made with Python (Flask) and JavaScript (React) <
 
 ## Features
 **CRUD Functionality**: Seamlessly create, read, update, and delete friends from your store. <br />
-**User-Friendly UI/UX**: Enhanced user experience with stylish UI components provided by Chakra UI. <br />
+**User-Friendly UI/UX**: Enhanced user experience with stylish UI components provided by Chakra UI, giving different preset profile pictures based on the gender. <br />
 **Light and Dark Mode**: A more personalized user interface experience with light and dark mode options. <br />
 **Responsive Design**: The app is designed to adapt to various screen sizes, ensuring a consistent experience across devices. <br />
 
