@@ -23,13 +23,13 @@ This full-stack application is made with Python (Flask) and JavaScript (React) <
 **Clone the repository:** <br />
 
 ```bash
-git clone https://github.com/burakorkmez/react-python-tutorial
+git clone https://github.com/MayaAH3/Contact-Book
 ```
 
 **Navigate to the project directory:** <br />
 
 ```bash
-cd react-python-tutorial
+cd Contact-Book
 ```
 
 **Navigate to the backend directory:** <br />
